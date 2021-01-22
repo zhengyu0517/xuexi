@@ -11,7 +11,9 @@ import java.lang.reflect.Proxy;
 
 public class Test {
     public static void main(String[] args) throws Exception {
+//        Thread thread = new Thread();
         ProdInst prodInst = new ProdInst();
+//        prodInst.wait();
 //        prodInst.say();
         MyProxy myProxy = new MyProxy();
         CrmEntity crmEntityImpl1 = (CrmEntity)myProxy.getProxyNew(prodInst);

@@ -1,9 +1,15 @@
-package main.com.zhengyu.modul.simpleFactory;
+package main.com.zhengyu.simpleFactory;
+
+import main.com.zhengyu.domian.PaizzMeat;
+import main.com.zhengyu.domian.PaizzaVegg;
+import main.com.zhengyu.domian.Pizza;
+
+import java.io.Serializable;
 
 /**
  * 核心类，工厂类
  */
-public class SimplePizzaFactory {
+public class SimplePizzaFactory implements Serializable {
 
     public Pizza createPizza(String typePizza){
         if("肉".equals(typePizza)){

@@ -1,4 +1,4 @@
-package main.com.zhengyu.modul.simpleFactory;
+package main.com.zhengyu.domian;
 
 public class PaizzaVegg extends Pizza {
     @Override

@@ -1,11 +1,22 @@
-package main.com.zhengyu.modul.simpleFactory;
+package main.com.zhengyu.simpleFactory;
 
-public class PizzaStore {
+import main.com.zhengyu.domian.Pizza;
+
+import java.io.Serializable;
+
+public class PizzaStore1 implements Serializable {
+
+
+    private static final long serialVersionUID = -1413978502181048493L;
 
     private SimplePizzaFactory simplePizzaFactory;
 
-    public PizzaStore(SimplePizzaFactory simplePizzaFactory){
+    public PizzaStore1(SimplePizzaFactory simplePizzaFactory){
         this.simplePizzaFactory = simplePizzaFactory;
+    }
+
+    public PizzaStore1() {
+
     }
 
     public void orderPizza(String typePizza){

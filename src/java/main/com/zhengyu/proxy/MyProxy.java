@@ -29,10 +29,10 @@ public class MyProxy {
         Object object1 = Proxy.newProxyInstance(object.getClass().getClassLoader(),object.getClass().getInterfaces(), new InvocationHandler() {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                    System.out.println("开始");
-                    Object result = method.invoke(object, args);
-                    System.out.println("结束");
-                    return result;
+                System.out.println("开始");
+                Object result = method.invoke(object, args);
+                System.out.println("结束");
+                return result;
             }
         });
 

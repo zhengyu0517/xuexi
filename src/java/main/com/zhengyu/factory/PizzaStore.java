@@ -1,8 +1,8 @@
 package main.com.zhengyu.factory;
 
 
-import main.com.zhengyu.modul.simpleFactory.PaizzMeat;
-import main.com.zhengyu.modul.simpleFactory.Pizza;
+import main.com.zhengyu.domian.PaizzMeat;
+import main.com.zhengyu.domian.Pizza;
 
 public class PizzaStore implements Factory {
     @Override
