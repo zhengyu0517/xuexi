@@ -7,5 +7,18 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.32" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.32" />
+        </SOURCES>
+        <jarDirectory url="file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.32" recursive="false" />
+        <jarDirectory url="file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.32" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
 </module>

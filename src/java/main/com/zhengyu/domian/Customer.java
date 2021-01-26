@@ -44,7 +44,14 @@ public class Customer implements Cloneable, Serializable {
     @Override
     public Customer clone() throws CloneNotSupportedException {
         Customer customer = (Customer)super.clone();
-        customer.party = party.clone();
+        if(null != party) {
+            customer.party = party.clone();
+        }
         return customer;
+    }
+
+    @Override
+    public String toString(){
+        return "custName:"+custName+" age:"+age +" custId:"+custId ;
     }
 }

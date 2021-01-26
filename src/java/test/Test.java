@@ -1,5 +1,6 @@
 package test;
 
+import main.com.zhengyu.domian.Customer;
 import main.com.zhengyu.proxy.CrmEntity;
 import main.com.zhengyu.proxy.MyProxy;
 import main.com.zhengyu.proxy.ProdInst;
@@ -11,13 +12,23 @@ import java.lang.reflect.Proxy;
 
 public class Test {
     public static void main(String[] args) throws Exception {
+        Customer customer = new Customer();
+        customer.setCustId(1l);
+        customer.setCustName("zhangsan");
+        customer.setAge(18l);
+        Customer customer1 = new Customer();
+        customer1 = customer;
+        System.out.println(customer.toString());
+        System.out.println(customer.hashCode());
+        System.out.println(customer1.toString());
+        System.out.println(customer1.hashCode());
 //        Thread thread = new Thread();
-        ProdInst prodInst = new ProdInst();
+//        ProdInst prodInst = new ProdInst();
 //        prodInst.wait();
 //        prodInst.say();
-        MyProxy myProxy = new MyProxy();
-        CrmEntity crmEntityImpl1 = (CrmEntity)myProxy.getProxyNew(prodInst);
-        crmEntityImpl1.say();
+//        MyProxy myProxy = new MyProxy();
+//        CrmEntity crmEntityImpl1 = (CrmEntity)myProxy.getProxyNew(prodInst);
+//        crmEntityImpl1.say();
 //        CrmEntity crmEntityImpl1 = (CrmEntity)getProxyNew(prodInst);
 //        ProdInst prodInst = new ProdInst();
 //        prodInst.say();
