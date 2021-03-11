@@ -1,6 +1,14 @@
 package main.com.zhengyu.domian;
 
 public class CookWater extends Water {
+    public CookWater(String a) {
+        this();
+    }
+
+    public CookWater() {
+        super();
+    }
+
     @Override
     void prepareWater() {
         System.out.println("准备可乐汽水");

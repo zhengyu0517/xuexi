@@ -14,16 +14,22 @@ import java.util.TreeMap;
 
 public class Test {
     public static void main(String[] args) throws Exception {
-        Customer customer = new Customer();
-        customer.setCustId(1l);
-        customer.setCustName("zhangsan");
-        customer.setAge(18l);
-        Customer customer1 = new Customer();
-        customer1 = customer;
-        System.out.println(customer.toString());
-        System.out.println(customer.hashCode());
-        System.out.println(customer1.toString());
-        System.out.println(customer1.hashCode());
+        String a =new String();
+        String b = new String();
+        a="2";
+        b="1";
+        a= b;
+        System.out.println(a);
+//        Customer customer = new Customer();
+//        customer.setCustId(1l);
+//        customer.setCustName("zhangsan");
+//        customer.setAge(18l);
+//        Customer customer1 = new Customer();
+//        customer1 = customer;
+//        System.out.println(customer.toString());
+//        System.out.println(customer.hashCode());
+//        System.out.println(customer1.toString());
+//        System.out.println(customer1.hashCode());
 //        Thread thread = new Thread();
 //        ProdInst prodInst = new ProdInst();
 //        prodInst.wait();
